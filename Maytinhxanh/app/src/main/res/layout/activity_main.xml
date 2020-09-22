@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/herb"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/EditDDMMYYYY"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Chọn Ngày"
+            android:layout_weight="1"
+            android:textColor="@color/color_text"
+            android:textColorHint="@color/color_text_hint"
+            android:textSize="30sp"
+            android:id="@+id/tvDate"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+    <Button
+        android:id="@+id/AddButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:textColor="@color/color_text"
+        app:strokeWidth="2dp"
+        android:text="Tổng Cộng"
+        android:textSize="20sp"
+        app:strokeColor="@android:color/white"
+        app:backgroundTint="@android:color/transparent"
+        android:onClick="btn_add"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:layout_weight="1"
+            android:textColor="@color/color_text"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"
+            android:text="Tổng Cộng"/>
+        <TextView
+            android:id="@+id/DisplayResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="35sp"
+            android:textColor="@color/color_text"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            android:text="0"/>
+    </LinearLayout>
+</LinearLayout>

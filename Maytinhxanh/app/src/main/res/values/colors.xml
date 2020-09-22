@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">@android:color/transparent</color>
+    <color name="color_text">@android:color/white</color>
+    <color name="color_text_hint">#ebebed</color>
+    <color name="color_primary_dark">@android:color/black</color>
+    <color name="color_accent">#4285F4</color>
+    <color name="color_green">#A4C639</color>
+    <color name="semi_transparent">#66000000</color>
+</resources>
